@@ -1,0 +1,148 @@
+\documentclass[10pt,a4paper,fontset=none]{ctexart}
+\usepackage[margin=1.25cm]{geometry}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{ragged2e}
+
+\setCJKmainfont[Path=C:/Windows/Fonts/,BoldFont=msyhbd.ttc]{msyh.ttc}
+\setCJKsansfont[Path=C:/Windows/Fonts/,BoldFont=msyhbd.ttc]{msyh.ttc}
+\setCJKmonofont[Path=C:/Windows/Fonts/]{simsun.ttc}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setstretch{1.04}
+\definecolor{mainblue}{HTML}{2F5597}
+\definecolor{lightgray}{HTML}{F4F6FA}
+\definecolor{textgray}{HTML}{333333}
+\hypersetup{colorlinks=true,urlcolor=mainblue}
+\setlist[itemize]{leftmargin=1.1em,itemsep=0.12em,topsep=0.15em,parsep=0em}
+\titleformat{\section}{\large\bfseries\color{mainblue}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.55em}{0.35em}
+\renewcommand\labelitemi{\textcolor{mainblue}{\small$\bullet$}}
+
+\newcommand{\resumeHeader}[5]{
+  \begin{center}
+    {\zihao{2}\bfseries #1}\par
+    \vspace{0.25em}
+    {\color{textgray}#2}\par
+    \vspace{0.25em}
+    {\color{textgray}#3 \quad | \quad #4 \quad | \quad #5}\par
+  \end{center}
+}
+
+\newcommand{\entry}[4]{
+  \vspace{0.15em}
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries\color{mainblue}}p{3.1cm} X >{\raggedleft\arraybackslash}p{2.4cm}@{}}
+    #1 & #2 & #3 \\
+  \end{tabularx}
+  \if\relax\detokenize{#4}\relax\else {\color{textgray}#4}\fi
+}
+
+\newcommand{\projectTitle}[4]{
+  \vspace{0.2em}
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries\color{mainblue}}p{3.1cm} X >{\raggedleft\arraybackslash}p{2.4cm}@{}}
+    #1 & {\bfseries #2} & #3 \\
+  \end{tabularx}
+  {\color{textgray}#4}
+}
+
+\begin{document}
+\color{textgray}
+\resumeHeader{吴亮希}{个人简历 \quad Personal Resume}{21岁 / 女 / 汉族 / 汕头}{19865923115}{202200202067@stumail.sztu.edu.cn}
+
+\section{基本信息}
+\begin{tabularx}{\linewidth}{@{}p{2.4cm}X p{2.4cm}X p{2.4cm}X@{}}
+姓名： & 吴亮希 & 年龄： & 21岁 & 性别： & 女 \\
+身高体重： & 165cm/51kg & 民族： & 汉 & 籍贯： & 汕头 \\
+政治面貌： & 共青团员 & 电话： & 19865923115 & 邮箱： & 202200202067@stumail.sztu.edu.cn \\
+\end{tabularx}
+
+\section{教育背景}
+\entry{2022-09 至今}{深圳技术大学 \quad 计算机科学与技术（本科）}{}{}
+\begin{itemize}
+  \item 核心课程：深度学习、大数据原理、人工智能导论、数据库系统、软件工程、计算机网络、数据结构与算法、操作系统。
+  \item 入选伦琴人工智能实验班（百度联合培养，前 10\%），计算机生物学实验室算法组核心成员。
+\end{itemize}
+
+\section{项目经验}
+\projectTitle{2025-01 至 2025-08}{蛋白质-配体对接与亲和力预测深度学习框架}{负责人}{项目内容：}
+\begin{itemize}
+  \item 参与自研 Graph-Transformer 架构深度学习框架，实现蛋白质-配体结合亲和力端到端预测，Top-1 对接成功率 65.5\%（RMSD<2Å），推理效率提升 20.6\%。
+  \item 搭建多 GPU 分布式训练框架（DDP），结合混合精度训练 / 动态批处理优化性能，开发 PDBbind 数据集全流程处理 pipeline，实现数据标准化与模型工程化落地。
+  \item 该项目核心技术已申请发明专利，论文投稿国际期刊，具备科研创新与成果转化能力。
+  \item 技术栈：PyTorch/PyTorch Lightning、CUDA、RDKit、NumPy。
+\end{itemize}
+项目职责：
+\begin{itemize}
+  \item 统筹项目研发规划、技术路线与里程碑，把控全周期进度，协调团队分工与跨模块协作。
+  \item 主导 Graph-Transformer 架构设计与核心算法开发，负责模型精度与性能优化。
+  \item 搭建分布式训练体系，实现数据自动化处理与模型工程化部署。
+  \item 负责专利撰写、论文投稿及科研成果转化落地。
+  \item 把控技术选型、代码规范与架构合理性，攻坚技术难点。
+\end{itemize}
+
+\projectTitle{2024-10 至 2024-12}{编程导师智能体系统}{负责人}{项目内容：}
+\begin{itemize}
+  \item 基于多智能体协作框架搭建全流程编程教学智能体系统，实现学习路径规划、智能出题、代码评审三大核心功能，形成从学习到练习再到反馈的闭环教学能力。
+  \item 主导实现 ReAct+Plan and Execute 核心架构，落地 Function Calling 工具调用能力与多类型记忆机制，提升智能体任务规划、逻辑推理及长时交互能力。
+  \item 集成 Qdrant 向量库与 RAG 检索增强技术，构建编程知识专属知识库，优化智能体知识检索精度与回答准确性，保障教学内容专业性。
+  \item 技术栈：Qdrant、RAG、Function Calling、ReAct、Plan and Execute 架构。
+\end{itemize}
+项目职责：
+\begin{itemize}
+  \item 负责系统从 0 到 1 整体设计与落地，制定技术路线、研发计划。
+  \item 主导核心架构实现，优化智能体任务规划、逻辑推理与长时交互能力。
+  \item 搭建向量知识库，制定知识处理规则，保障教学内容专业准确。
+  \item 把控技术选型与开发规范，保障系统稳定性、可扩展性与易用性。
+\end{itemize}
+
+\newpage
+\section{实习经验}
+\projectTitle{2026-01 至 2026-04}{百思特管理咨询有限公司}{AI工程师}{项目内容：}
+\begin{itemize}
+  \item 大模型应用开发与集成：统一集成主流大模型 API，适配 OpenAI/Anthropic 协议，实现多 provider 无缝切换。
+  \item RAG 检索增强系统：接入 Qdrant 等多种向量数据库，集成 Embedding 模型，采用混合检索策略，提升检索质量。
+  \item 系统架构与工具链：基于 Electron+React+TypeScript 设计模块化桌面架构，搭建工具调用框架与多 Agent 协作机制。
+\end{itemize}
+项目职责：
+\begin{itemize}
+  \item 参与企业级数字员工平台搭建优化，负责 Agent 流程设计，RAG 构建，Qdrant 落地，Function Calling 开发。
+  \item 大模型应用开发：主导多模型 API 统一集成与协议适配，开发推理优化机制，实现模型参数动态配置与切换。
+  \item RAG 系统建设：负责向量数据库接入与接口设计，部署 Embedding 模型，优化混合检索算法提升检索效果。
+  \item 具备需求—开发—上线—迭代全链路项目实践经验，聚焦大模型应用商业落地。
+\end{itemize}
+
+\section{技能特长}
+\begin{itemize}
+  \item AI / 开发：熟练 Python、PyTorch、Java，掌握 RAG、AI Agent、Function Calling。
+  \item 工程能力：熟练 Git、代码迭代、环境部署，熟练使用 AI 工具（Claude Code、Cursor、Windsurf）。
+  \item 综合能力：需求对接、跨部门协同、项目推进、结果导向、流程优化。
+  \item 语言：CET-6，可熟练读写与沟通。
+\end{itemize}
+
+\section{荣誉证书}
+\begin{itemize}
+  \item 2025年12月30日 \quad 科创之星三等奖 \quad 校级。
+  \item 2025年12月30日 \quad 学习之星二等奖 \quad 校级。
+  \item 2025年12月30日 \quad 文体之星三等奖 \quad 校级。
+  \item 2025年5月26号 \quad 蓝桥杯全国软件和信息技术专业人才大赛 Python 程序设计 B 组 \quad 省级二等奖。
+  \item 2025年2月17日 \quad “技大杯”书画大赛优秀奖 \quad 校级。
+  \item 2024年十月 \quad “舞动青春”舞蹈大赛一等奖 \quad 校级。
+  \item 2024年四月 \quad 优秀共青团员 \quad 校级。
+  \item 2023年 \quad “校长杯”体育舞蹈大赛拉丁A组第四名 \quad 校级。
+  \item 2023年 \quad “校长杯”体育舞蹈大赛集体舞第三名 \quad 校级。
+\end{itemize}
+
+\section{自我评价}
+本人品行端正、作风严谨，责任心强，具备良好团队协作与职业素养。计算机专业基础扎实，深耕大模型应用、AI Agent、RAG 等核心技术，熟练掌握 Python，英语六级可胜任技术文档读写与沟通。拥有企业级 AI 项目全链路实践经验，擅长需求拆解、方案设计与技术落地，具备算法研发与工程实现能力，执行力强、注重结果导向，愿以技术能力助力公司智能化建设与业务发展。
+
+\section{兴趣爱好}
+编程、跳舞、弹吉他、写书法。
+
+\end{document}
