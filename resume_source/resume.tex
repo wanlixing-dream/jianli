@@ -94,21 +94,36 @@
   \item 入选伦琴人工智能实验班（百度联合培养，前 10\%），计算机生物学实验室算法组核心成员。
 \end{itemize}
 
-\section{项目经验}
-\projectTitle{2025-01 至 2025-08}{蛋白质-配体对接与亲和力预测深度学习框架}{负责人}{项目内容：}
+\section{实习经验}
+\projectTitle{2026-01 至 2026-04}{百思特管理咨询有限公司}{AI 工程师实习生}{项目内容：}
 \begin{itemize}
-  \item 面向蛋白质-配体对接与亲和力预测场景，设计数据预处理、模型训练、推理评估与结果汇总的后端式流水线，支持 PDBbind 数据集批量处理、任务配置和结果落盘。
-  \item 参与自研 Graph-Transformer / MoBA 架构，实现亲和力端到端预测，Top-1 对接成功率 65.5\%（RMSD<2Å），推理效率提升 20.6\%。
-  \item 搭建多 GPU 分布式训练框架（DDP），处理 NCCL、GPU 结果聚合、批量推理、CSV 结果输出等工程问题，提升 Linux 环境下长任务运行稳定性。
-  \item 技术栈：Python、PyTorch、PyTorch Lightning、CUDA、RDKit、NumPy、Linux、Git。
+  \item 参与 BestCowork 企业级 AI 协作平台研发，围绕 OpenClaw 落地多 Agent 协同、技能市场、沙箱执行和模型配置等功能。
+  \item 参与模型服务、工具调用、会话存储、Agent 生命周期管理等模块开发，熟悉大模型 API、NLP 任务交互、Prompt/系统提示词配置和安全审批机制。
+  \item 基于 Electron+React+TypeScript 参与桌面端产品建设，配合接口联调、环境部署、日志排查和版本迭代，支撑真实业务场景使用。
 \end{itemize}
 项目职责：
 \begin{itemize}
-  \item 负责项目研发规划、技术路线与里程碑，拆分数据处理、训练、推理、评估等模块，推进代码工程化与可复现实验。
-  \item 设计核心算法流程与性能优化方案，解决数据格式转换、批处理调度、分布式同步和推理结果一致性问题。
-  \item 编写数据处理和推理脚本，沉淀可复用工具链，配合团队完成专利撰写、论文投稿及成果转化。
+  \item 负责部分 Agent 执行链路与模型兼容层实现，参与问题定位、代码修复和功能验证。
+  \item 熟练使用 AI Agent 辅助需求分析、代码理解、调试排查和文档整理，形成高效的人机协作开发习惯。
+  \item 与产品、前端和业务团队协作推进交付，具备跨部门沟通、快速学习、持续优化和结果导向能力。
 \end{itemize}
 
+\section{项目经验}
+\projectTitle{2025-01 至 2025-08}{InterMoBA 蛋白质-配体对接与亲和力预测框架}{负责人}{项目内容：}
+\begin{itemize}
+  \item 面向 AI 药物研发中的蛋白质-配体对接与结合亲和力预测场景，构建从分子/蛋白结构预处理、PDBbind 数据集加载、模型训练、推理评估到结果汇总的深度学习流水线。
+  \item 参与 Graph-Transformer / MoBA 架构研发，引入能量函数预测与 pose selection 任务，支持亲和力回归、对接构象筛选和 RMSD 指标评估，Top-1 对接成功率 65.5\%（RMSD<2Å）。
+  \item 基于 PyTorch Lightning 搭建多 GPU 分布式训练与评估流程，处理 DDP、NCCL、梯度裁剪、学习率调度、指标聚合和 checkpoint 管理等工程问题。
+  \item 技术栈：Python、PyTorch、PyTorch Lightning、CUDA、RDKit、OpenBabel、NumPy、Linux、Git。
+\end{itemize}
+项目职责：
+\begin{itemize}
+  \item 负责项目研发规划、技术路线与里程碑，拆分数据处理、特征构建、训练、推理、评估等模块，推进代码工程化与可复现实验。
+  \item 编写 RDKit 分子构象生成、蛋白口袋提取、能量文件预测、对接结果统计等脚本，解决数据格式转换、批处理调度和结果一致性问题。
+  \item 结合药物研发任务理解模型输入输出与业务指标，配合团队完成专利撰写、论文投稿及成果转化。
+\end{itemize}
+
+\newpage
 \projectTitle{2024-10 至 2024-12}{个性化编程学习 Agent 平台}{负责人}{项目内容：}
 \begin{itemize}
   \item 从 0 到 1 搭建个性化学习 Agent 平台，提供学习计划、知识入库、语义检索、测验练习、进度追踪等能力，并通过 FastAPI REST API 与 MCP Tools 对外封装服务。
@@ -121,31 +136,16 @@
   \item 负责后端系统分层设计，将 Agent 能力拆分为 API 层、核心服务层、记忆存储层、RAG 检索层和可观测性模块。
   \item 封装标准化接口与工具调用能力，处理参数校验、结果序列化、异常返回和多客户端接入问题。
   \item 优化检索链路和数据组织方式，通过稠密向量、关键词、实体、重要性、时效等多信号融合提升召回质量。
-  \item 制定代码结构、测试、格式化和类型检查规范，使用 pytest、black、flake8、mypy 提升项目可维护性。
-\end{itemize}
-
-\section{实习经验}
-\projectTitle{2026-01 至 2026-04}{百思特管理咨询有限公司}{AI工程师}{项目内容：}
-\begin{itemize}
-  \item 参与企业级数字员工平台建设，负责 Agent 流程设计、RAG 构建、工具调用和后端能力集成，支撑业务场景落地。
-  \item 统一集成主流大模型 API，适配 OpenAI/Anthropic 协议，封装模型调用、参数配置、错误处理与多 provider 切换能力。
-  \item 接入 Qdrant 等向量数据库和 Embedding 模型，设计检索、重排、上下文组装流程，提升知识库问答与业务检索质量。
-  \item 基于 Electron+React+TypeScript 参与模块化桌面系统建设，配合后端接口联调、环境部署和版本迭代。
-\end{itemize}
-项目职责：
-\begin{itemize}
-  \item 参与需求拆解、技术方案设计、接口联调、测试验证和上线迭代，具备需求—开发—上线—优化全链路实践经验。
-  \item 负责模型 API 与检索模块的封装调用，关注接口稳定性、可扩展性和异常场景处理。
-  \item 与产品、前端和业务团队协作推进项目交付，具备跨部门沟通、问题定位和持续优化能力。
 \end{itemize}
 
 \section{技能特长}
 \begin{itemize}
-  \item 编程语言：熟练 Python，掌握 Java 基础，了解 C/C++；具备数据结构与算法基础，蓝桥杯 Python B 组省级二等奖。
-  \item 后端开发：熟悉 FastAPI、RESTful API 设计、接口封装调用、参数校验、异常处理；了解前后端分离和 Web 服务部署流程。
-  \item 数据与检索：熟悉数据库系统基础，使用过 SQLite、Qdrant、ChromaDB，掌握向量检索、BM25、RAG 和数据处理 pipeline。
-  \item 工程能力：熟悉 Git、Windows/Linux 开发环境、代码迭代、环境部署、pytest 测试及 black/flake8/mypy 代码质量工具。
-  \item 综合能力：需求对接、跨部门协同、项目推进、问题分析与解决、结果导向、流程优化。
+  \item 编程语言：熟练 Python，掌握 TypeScript/JavaScript，掌握 Java 基础，了解 C/C++；具备数据结构与算法基础，蓝桥杯 Python B 组省级二等奖。
+  \item 深度学习：熟悉 PyTorch、PyTorch Lightning、分布式训练、模型训练/推理/评估流程，了解 TensorFlow；具备 Graph Transformer、MoBA、回归/分类指标实践。
+  \item AI Agent 与大模型：熟练使用 OpenClaw 等 AI Agent，熟悉 Prompt 配置、工具调用、MCP/Skills、多 Agent 协作、RAG 与大模型 API 接入。
+  \item 药物研发 AI：具备蛋白质-配体对接、结合亲和力预测、分子构象生成、蛋白口袋提取、PDBbind 数据处理等项目经验，熟悉 RDKit、OpenBabel。
+  \item 工程能力：熟悉 Electron、React、Node.js、SQL.js/SQLite、Git、Windows/Linux 开发环境、接口联调、日志排查、测试验证和环境部署。
+  \item 综合能力：强自驱力，善于需求对接、跨部门协同、项目推进、问题分析与解决，能够快速学习并适应 AI+业务场景。
   \item 语言：CET-6，可熟练读写与沟通。
 \end{itemize}
 
@@ -163,7 +163,7 @@
 \end{itemize}
 
 \section{自我评价}
-本人品行端正、作风严谨，责任心强，具备良好团队协作与职业素养。计算机专业基础扎实，系统学习数据库、操作系统、计算机网络、数据结构与算法、软件工程等课程，熟悉后端接口开发、数据存储、检索系统和工程化实践。拥有企业级 AI 应用与复杂算法项目经历，擅长需求拆解、方案设计、接口封装、问题定位和持续优化，学习能力强、执行力强，愿在后端研发岗位中持续提升系统性能、工程质量与业务价值。
+本人计算机专业基础扎实，系统学习数据库、操作系统、计算机网络、数据结构与算法、人工智能、深度学习等课程。具备企业级 AI Agent 实习经验和 AI 药物研发算法项目经验，熟悉 Python、PyTorch、大模型 API、OpenClaw Agent、工具调用和工程化落地流程。自驱力强、学习适应快，善于沟通表达、需求拆解、问题定位和跨团队协作，希望在 AI+药学/AI+医学/AI+大模型应用方向持续积累业务理解与技术深度。
 
 \section{兴趣爱好}
 编程、跳舞、弹吉他、写书法。
