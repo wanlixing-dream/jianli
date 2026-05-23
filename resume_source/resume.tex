@@ -1,5 +1,5 @@
 \documentclass[11pt,a4paper,fontset=none]{ctexart}
-\usepackage[margin=1.25cm]{geometry}
+\usepackage[margin=1.1cm]{geometry}
 \usepackage{xcolor}
 \usepackage{tabularx}
 \usepackage{enumitem}
@@ -16,19 +16,19 @@
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\setstretch{1.08}
+\setstretch{1.03}
 \definecolor{mainblue}{HTML}{2F5597}
 \definecolor{resumeTeal}{HTML}{436A78}
 \definecolor{resumeGold}{HTML}{C5A46A}
 \definecolor{lightgray}{HTML}{F4F6FA}
 \definecolor{textgray}{HTML}{333333}
-\setlist[itemize]{leftmargin=1.1em,itemsep=0.05em,topsep=0.08em,parsep=0em}
+\setlist[itemize]{leftmargin=1.05em,itemsep=0em,topsep=0.04em,parsep=0em}
 \newcommand{\sectionTag}[1]{%
   \noindent\colorbox{resumeTeal}{\makebox[2.9cm][l]{\hspace{0.45em}\color{white}#1}}%
   \hspace{0.1cm}{\color{resumeTeal}\rule[0.55ex]{\dimexpr\linewidth-3.35cm\relax}{0.35pt}}%
 }
 \titleformat{\section}{\large\bfseries}{}{0em}{\sectionTag}
-\titlespacing*{\section}{0pt}{0.65em}{0.35em}
+\titlespacing*{\section}{0pt}{0.5em}{0.25em}
 \renewcommand\labelitemi{\textcolor{mainblue}{\small$\bullet$}}
 
 \newcommand{\resumeHeader}[5]{
@@ -78,6 +78,7 @@
   民\quad 族： & 汉 & 籍\quad 贯： & 汕头 \\
   政治面貌： & 共青团员 & 电\quad 话： & 19865923115 \\
   邮\quad 箱： & \multicolumn{3}{l}{202200202067@stumail.sztu.edu.cn} \\
+  求职方向： & \multicolumn{3}{l}{AI视觉/垂直场景智能体开发实习生} \\
   \end{tabularx}
 \end{minipage}
 \hfill
@@ -97,22 +98,22 @@
 \section{实习经验}
 \projectTitle{2026-01 至 2026-04}{百思特管理咨询有限公司}{AI 工程师实习生}{项目内容：}
 \begin{itemize}
-  \item 参与 BestCowork 企业级 AI 协作平台研发，围绕 OpenClaw 落地多 Agent 协同、技能市场、沙箱执行和模型配置等功能。
-  \item 参与模型服务、工具调用、会话存储、Agent 生命周期管理等模块开发，熟悉大模型 API、NLP 任务交互、Prompt/系统提示词配置和安全审批机制。
-  \item 基于 Electron+React+TypeScript 参与桌面端产品建设，配合接口联调、环境部署、日志排查和版本迭代，支撑真实业务场景使用。
+  \item 参与 BestCowork 企业级 AI 协作平台研发，围绕 OpenClaw 落地多 Agent 协同、技能市场、沙箱执行、模型配置和企业流程自动化等功能。
+  \item 参与模型服务、工具调用、会话存储、Agent 生命周期管理等模块开发，熟悉大模型 API、NLP 交互、Prompt Engineering、系统提示词配置和安全审批机制。
+  \item 基于 Electron+React+TypeScript 参与桌面端产品建设，配合接口联调、环境部署、日志排查、测试验证和版本迭代，支撑真实业务场景使用。
 \end{itemize}
 项目职责：
 \begin{itemize}
-  \item 负责部分 Agent 执行链路与模型兼容层实现，参与问题定位、代码修复和功能验证。
-  \item 熟练使用 AI Agent 辅助需求分析、代码理解、调试排查和文档整理，形成高效的人机协作开发习惯。
-  \item 与产品、前端和业务团队协作推进交付，具备跨部门沟通、快速学习、持续优化和结果导向能力。
+  \item 负责部分 Agent 执行链路与模型兼容层实现，参与问题定位、代码修复、功能验证和效果优化。
+  \item 熟练使用 AI Agent 辅助需求分析、代码理解、调试排查、测试用例设计和技术文档整理，形成高效的人机协作开发习惯。
+  \item 与产品、前端和业务团队协作推进交付，能够将技术实现转化为业务语言，具备跨团队沟通、快速学习和结果导向能力。
 \end{itemize}
 
 \section{项目经验}
 \projectTitle{2025-01 至 2025-08}{InterMoBA 蛋白质-配体对接与亲和力预测框架}{负责人}{项目内容：}
 \begin{itemize}
-  \item 面向 AI 药物研发中的蛋白质-配体对接与结合亲和力预测场景，构建从分子/蛋白结构预处理、PDBbind 数据集加载、模型训练、推理评估到结果汇总的深度学习流水线。
-  \item 参与 Graph-Transformer / MoBA 架构研发，引入能量函数预测与 pose selection 任务，支持亲和力回归、对接构象筛选和 RMSD 指标评估，Top-1 对接成功率 65.5\%（RMSD<2Å）。
+  \item 面向 AI 药物研发中的蛋白质-配体对接与结合亲和力预测场景，构建从分子/蛋白三维结构预处理、PDBbind 数据集加载、模型训练、推理评估到结果汇总的深度学习流水线。
+  \item 参与 Graph-Transformer / MoBA 架构研发，引入能量函数预测与 pose selection 任务，支持亲和力回归、三维构象筛选和 RMSD 指标评估，Top-1 对接成功率 65.5\%（RMSD<2Å）。
   \item 基于 PyTorch Lightning 搭建多 GPU 分布式训练与评估流程，处理 DDP、NCCL、梯度裁剪、学习率调度、指标聚合和 checkpoint 管理等工程问题。
   \item 技术栈：Python、PyTorch、PyTorch Lightning、CUDA、RDKit、OpenBabel、NumPy、Linux、Git。
 \end{itemize}
@@ -120,50 +121,44 @@
 \begin{itemize}
   \item 负责项目研发规划、技术路线与里程碑，拆分数据处理、特征构建、训练、推理、评估等模块，推进代码工程化与可复现实验。
   \item 编写 RDKit 分子构象生成、蛋白口袋提取、能量文件预测、对接结果统计等脚本，解决数据格式转换、批处理调度和结果一致性问题。
-  \item 结合药物研发任务理解模型输入输出与业务指标，配合团队完成专利撰写、论文投稿及成果转化。
+  \item 结合药物研发任务理解模型输入输出与业务指标，通过指标分析定位训练和推理瓶颈，配合团队完成专利撰写、论文投稿及成果转化。
 \end{itemize}
 
 \newpage
-\projectTitle{2024-10 至 2024-12}{个性化编程学习 Agent 平台}{负责人}{项目内容：}
+\projectTitle{2024-10 至 2024-12}{个性化编程学习垂直场景 Agent 平台}{负责人}{项目内容：}
 \begin{itemize}
-  \item 从 0 到 1 搭建个性化学习 Agent 平台，提供学习计划、知识入库、语义检索、测验练习、进度追踪等能力，并通过 FastAPI REST API 与 MCP Tools 对外封装服务。
-  \item 设计多范围长期记忆与数据持久化方案，使用 JSONL 分片、ChromaDB 向量库、BM25 倒排索引实现知识数据存储、混合检索和按领域管理。
-  \item 实现学习领域、知识笔记、掌握度、薄弱点、执行追踪等接口，支持 React Dashboard 调用，形成前后端分离的 Web 应用闭环。
-  \item 技术栈：Python、FastAPI、ChromaDB、BM25、RAG、MCP、React、Git。
+  \item 从 0 到 1 搭建面向编程学习的垂直场景 Agent 平台，提供学习计划、知识入库、语义检索、测验练习、进度追踪等能力，并通过 FastAPI REST API 与 MCP Tools 对外封装服务。
+  \item 设计多范围长期记忆与数据持久化方案，使用 JSONL 分片、ChromaDB 向量库、BM25 倒排索引实现知识库构建、混合检索和按领域管理。
+  \item 参照 ReAct 工具调用思路实现学习领域、知识笔记、掌握度、薄弱点、执行追踪等接口，支持 React Dashboard 调用，形成前后端分离的 Web 应用闭环。
+  \item 技术栈：Python、FastAPI、ChromaDB、BM25、RAG、MCP、Prompt Engineering、React、Git。
 \end{itemize}
 项目职责：
 \begin{itemize}
   \item 负责后端系统分层设计，将 Agent 能力拆分为 API 层、核心服务层、记忆存储层、RAG 检索层和可观测性模块。
-  \item 封装标准化接口与工具调用能力，处理参数校验、结果序列化、异常返回和多客户端接入问题。
-  \item 优化检索链路和数据组织方式，通过稠密向量、关键词、实体、重要性、时效等多信号融合提升召回质量。
+  \item 封装标准化接口与工具调用能力，处理参数校验、结果序列化、异常返回和多客户端接入问题，具备业务系统集成意识。
+  \item 优化 Prompt、检索链路和数据组织方式，通过稠密向量、关键词、实体、重要性、时效等多信号融合提升召回质量。
 \end{itemize}
 
 \section{技能特长}
 \begin{itemize}
   \item 编程语言：熟练 Python，掌握 TypeScript/JavaScript，掌握 Java 基础，了解 C/C++；具备数据结构与算法基础，蓝桥杯 Python B 组省级二等奖。
-  \item 深度学习：熟悉 PyTorch、PyTorch Lightning、分布式训练、模型训练/推理/评估流程，了解 TensorFlow；具备 Graph Transformer、MoBA、回归/分类指标实践。
-  \item AI Agent 与大模型：熟练使用 OpenClaw 等 AI Agent，熟悉 Prompt 配置、工具调用、MCP/Skills、多 Agent 协作、RAG 与大模型 API 接入。
-  \item 药物研发 AI：具备蛋白质-配体对接、结合亲和力预测、分子构象生成、蛋白口袋提取、PDBbind 数据处理等项目经验，熟悉 RDKit、OpenBabel。
-  \item 工程能力：熟悉 Electron、React、Node.js、SQL.js/SQLite、Git、Windows/Linux 开发环境、接口联调、日志排查、测试验证和环境部署。
+  \item 深度学习与视觉基础：熟悉 PyTorch、PyTorch Lightning、分布式训练、模型训练/推理/评估流程，了解 TensorFlow、Transformer、目标检测、图像生成与多模态交互基础。
+  \item AI Agent 与大模型：熟悉 Prompt Engineering、工具调用、MCP/Skills、多 Agent 协作、RAG、向量数据库和大模型 API 接入，了解 ReAct/AutoGPT 等 Agent 思路。
+  \item 垂直场景 AI：具备企业级 AI Agent、学习场景智能体和 AI 药物研发算法项目经验，能结合业务指标进行效果分析、知识库构建和方案沉淀。
+  \item 工程能力：熟悉 FastAPI、Electron、React、Node.js、SQL.js/SQLite、Git、Windows/Linux 开发环境、接口联调、日志排查、测试验证和环境部署。
   \item 综合能力：强自驱力，善于需求对接、跨部门协同、项目推进、问题分析与解决，能够快速学习并适应 AI+业务场景。
   \item 语言：CET-6，可熟练读写与沟通。
 \end{itemize}
 
 \section{荣誉证书}
 \begin{itemize}
-  \item 2025年12月30日 \quad 科创之星三等奖 \quad 校级。
-  \item 2025年12月30日 \quad 学习之星二等奖 \quad 校级。
-  \item 2025年12月30日 \quad 文体之星三等奖 \quad 校级。
   \item 2025年5月26号 \quad 蓝桥杯全国软件和信息技术专业人才大赛 Python 程序设计 B 组 \quad 省级二等奖。
-  \item 2025年2月17日 \quad “技大杯”书画大赛优秀奖 \quad 校级。
-  \item 2024年十月 \quad “舞动青春”舞蹈大赛一等奖 \quad 校级。
+  \item 2025年12月30日 \quad 科创之星三等奖、学习之星二等奖、文体之星三等奖 \quad 校级。
   \item 2024年四月 \quad 优秀共青团员 \quad 校级。
-  \item 2023年 \quad “校长杯”体育舞蹈大赛拉丁A组第四名 \quad 校级。
-  \item 2023年 \quad “校长杯”体育舞蹈大赛集体舞第三名 \quad 校级。
 \end{itemize}
 
 \section{自我评价}
-本人计算机专业基础扎实，系统学习数据库、操作系统、计算机网络、数据结构与算法、人工智能、深度学习等课程。具备企业级 AI Agent 实习经验和 AI 药物研发算法项目经验，熟悉 Python、PyTorch、大模型 API、OpenClaw Agent、工具调用和工程化落地流程。自驱力强、学习适应快，善于沟通表达、需求拆解、问题定位和跨团队协作，希望在 AI+药学/AI+医学/AI+大模型应用方向持续积累业务理解与技术深度。
+本人计算机专业基础扎实，系统学习数据库、操作系统、计算机网络、数据结构与算法、人工智能、深度学习等课程。具备企业级 AI Agent 实习经验、垂直场景 RAG Agent 项目经验和 AI 药物研发算法项目经验，熟悉 Python、PyTorch、大模型 API、Prompt Engineering、工具调用、向量数据库和工程化落地流程。自驱力强、学习适应快，善于需求拆解、问题定位、效果分析和跨团队协作，希望在 AI 视觉、多模态交互与垂直场景智能体方向持续积累业务理解与技术深度。
 
 \section{兴趣爱好}
 编程、跳舞、弹吉他、写书法。
