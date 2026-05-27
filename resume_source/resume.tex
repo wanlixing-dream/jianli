@@ -98,15 +98,15 @@
 \section{实习经验}
 \projectTitle{2026-01 至 2026-05}{百思特管理咨询有限公司}{AI 工程师实习生}{项目内容：}
 \begin{itemize}
-  \item 参与 BestCowork 企业级 AI 协作平台研发，围绕数字员工、知识库绑定、技能市场和 AI 工作流推进 Agent 能力落地。
-  \item 参与 Agent EngineRouter、团队注册表、委托工具、会话状态和工具权限等模块联调，理解任务规划、工具调用和多 Agent 协作链路。
-  \item 基于 Electron+React+TypeScript+Node.js 参与桌面端建设，配合 IPC、SQLite、接口联调、日志排查和测试验证。
-  \item 技术栈：TypeScript、JavaScript、React、Electron、Node.js、SQLite、LLM API、Agent Engine、MCP/工具调用、Git。
+  \item 参与 BestCowork 企业级 AI 协作平台桌面端与 Agent 能力迭代，围绕知识库绑定、技能市场和 AI 工作流推进需求理解、方案拆解与功能落地。
+  \item 基于 Electron+React+TypeScript+Node.js 参与 UI 功能改动、IPC 通信和 SQLite 数据联调，关注交互体验、接口稳定性和版本迭代。
+  \item 参与 Vite/Vitest、electron-builder、运行时依赖准备和打包脚本验证，支撑桌面端构建发布与问题排查。
+  \item 技术栈：TypeScript、JavaScript、React、Electron、Node.js、SQLite、Vite、Vitest、electron-builder、LLM API、Git。
 \end{itemize}
 项目职责：
 \begin{itemize}
-  \item 参与单 Agent/团队模式执行链路验证，围绕任务委托、并行委托、子会话创建、超时处理和状态同步进行问题定位。
-  \item 参与技能服务启动、权限请求、健康检查、引擎降级和异常恢复验证，沉淀测试用例、排查记录和使用说明。
+  \item 参与 Agent EngineRouter、团队注册表、委托工具、会话状态和工具权限等模块联调，围绕任务委托、并行委托和状态同步进行问题定位。
+  \item 参与技能服务启动、权限请求、健康检查、依赖修复、引擎降级和异常恢复验证，沉淀测试用例、排查记录和使用说明。
 \end{itemize}
 
 \section{项目经验}
@@ -120,21 +120,21 @@
 项目职责：
 \begin{itemize}
   \item 负责 API 层、Agent 协调层、记忆存储层、RAG 检索层、MCP 工具层、链路追踪和评估模块分层设计。
-  \item 设计 Prompt、工具调用、TraceRecorder 和 AgentEvaluator，记录检索、LLM 调用、工具调用和错误恢复并评估执行质量。
+  \item 设计 Prompt、工具调用、TraceRecorder 和 AgentEvaluator，记录检索、LLM 调用、工具调用和错误恢复，体现 AI 驱动流程设计与质量评估能力。
 \end{itemize}
 
 \newpage
 \vspace*{0.65cm}
 \projectTitle{2026-05 至 2026-05}{WanliDeal 端到端 AI 数据处理产品}{负责人}{项目内容：}
 \begin{itemize}
-  \item 从 0 到 1 搭建前后端打通的 AI 信息处理助手，覆盖文本提交、URL 提取、字段抽取、时效校验、结构化存储、API 查询和前端展示。
+  \item 从 0 到 1 设计并实现前后端打通的 AI 信息处理产品，覆盖需求拆解、文本/图片提交、结构化存储、API 查询和前端展示。
   \item 基于 LiteLLM 调用大模型并设计严格 JSON 输出 Prompt，将非结构化消息解析为商品、链接、价格、平台、步骤和有效期等字段。
   \item 提供一键启动脚本，自动检查环境、创建虚拟环境、安装前后端依赖并启动 FastAPI 与 Vue 前端，便于完整项目演示和迭代。
   \item 技术栈：Python、FastAPI、SQLAlchemy、SQLite、LiteLLM、Pydantic、pytest、Vue 3、TypeScript、Git。
 \end{itemize}
 项目职责：
 \begin{itemize}
-  \item 负责从原始消息到结构化卡片的处理链路设计，将流程拆分为 Extractor、Validator、Formatter、Pipeline、DB 和 API 层，体现需求到落地的完整开发能力。
+  \item 负责从原始消息到结构化卡片的处理链路设计，将流程拆分为 Extractor、Validator、Formatter、Pipeline、DB 和 API 层，覆盖设计、开发、测试和维护。
   \item 编写 URL 正则提取、LLM JSON 解析、字段映射、原始消息保存、结构化入库、条件筛选和分页查询逻辑，覆盖外部输入、数据库交互和服务接口。
   \item 编写 API、抽取器、处理流水线、格式化器和校验器测试用例，覆盖健康检查、批量提交、LLM 返回解析失败、时效校验和数据格式转换等场景。
 \end{itemize}
@@ -144,9 +144,10 @@
   \item 编程语言：熟练 Python，掌握 TypeScript/JavaScript 与 Node.js 技术栈，掌握 Java 基础，了解 C/C++；具备数据结构与算法基础。
   \item 智能体开发：实践 Agent 意图识别、任务路由、会话状态、工具调用、长期记忆、RAG 检索、Prompt Engineering、MCP Tools 和执行链路评估。
   \item 后端与集成：实践 FastAPI、Pydantic、SQLAlchemy、SQLite、REST API、参数校验、异常处理、分页查询、JSON 序列化和 pytest 测试。
-  \item 前端与工程：实践 Electron、React、Vue 3、TypeScript、IPC 通信、状态管理、前端数据展示和桌面端调试，理解前后端联调与版本迭代。
-  \item 稳定性保障：实践健康检查、错误返回、超时处理、异常恢复、LLM JSON 解析失败处理、日志排查、测试用例设计和执行质量评估。
-  \item AI 工具与框架：长期使用 Cursor/Trae 等 AI 编程工具辅助需求拆解、代码生成、测试排错和文档整理；了解 LangChain 类 Agent/RAG 编排框架的核心抽象。
+  \item 前端与工程：实践 Electron、React、Vue 3、TypeScript、IPC 通信、状态管理、前端数据展示和桌面端调试，能够支持 UI 改动、联调和版本迭代。
+  \item 工程交付：理解需求分析、方案拆解、测试验证、构建打包、启动脚本和发布前检查；实践 Vite、Vitest、pytest、electron-builder 与依赖准备流程。
+  \item 稳定性保障：实践健康检查、错误返回、超时处理、异常恢复、依赖修复、LLM JSON 解析失败处理、日志排查和执行质量评估。
+  \item AI 工具与框架：长期使用 Cursor/Trae 等 AI 编程工具辅助需求拆解、代码生成、测试排错和文档整理，并用 Agent 方式增强学习与开发流程；了解 LangChain 类 Agent/RAG 编排框架的核心抽象。
   \item 业务协作：关注企业知识管理、咨询交付、流程自动化和外部系统集成，能够围绕需求理解、功能取舍、接口联调和交付验证推进项目。
   \item 语言：CET-6，可熟练读写与沟通。
 \end{itemize}
@@ -159,7 +160,7 @@
 \end{itemize}
 
 \section{自我评价}
-本人计算机专业基础扎实，系统学习数据库、操作系统、计算机网络、数据结构与算法、人工智能、深度学习等课程。具备企业级 AI 协作平台实习经验，以及在校期间完成的 0→1 RAG 智能体系统和端到端 AI 数据处理产品经验，熟悉 Python、Node.js/JavaScript、TypeScript、FastAPI、Electron/React、Vue、大模型 API、Prompt Engineering、RAG、MCP 工具调用、API/数据库集成和测试验证。能够围绕任务规划、工具调用、记忆管理、服务稳定性和问题排查推进 Agent 应用落地，关注企业知识管理、咨询交付和流程自动化场景，沟通意愿强，愿意与业务和技术团队协作把需求转化为可演示、可迭代的系统功能。
+本人计算机专业基础扎实，系统学习数据库、操作系统、计算机网络、数据结构与算法、人工智能、深度学习等课程。具备企业级 AI 协作平台实习经验，以及在校期间完成的 0→1 Agent 系统和端到端 AI 数据处理产品经验，熟悉 Python、Node.js/JavaScript、TypeScript、FastAPI、Electron/React、Vue、大模型 API、Prompt Engineering、RAG、API/数据库集成、测试验证和构建脚本。能够围绕需求分析、方案拆解、开发联调、测试发布和问题排查推进 AI 应用交付，善于使用 Cursor/Trae 与 Agent 方式辅助编码和文档整理，愿意与业务、产品和工程团队协作推进迭代。
 
 \section{兴趣爱好}
 编程、跳舞、弹吉他、写书法。
